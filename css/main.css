@@ -12,6 +12,7 @@ button {
   width: 100px;
   border: 4px solid black;
   display: inline-block;
+  margin: -3px;
 }
 
 #gameboard{
