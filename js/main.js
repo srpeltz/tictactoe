@@ -9,9 +9,82 @@ var board = [
   [box7, box8, box9],
 ]
 //make variables for  document.getElementById for each square so it can be called later in the code.//
-var box1 = document.getElementById('box1').addEventListener('click', function() {
+var playerX = true
 
+function altTurn() {
+  if(playerX) {
+    playerX = false
+  }
+}
+
+var imageX = 'http://www.iconsplace.com/download/black-letter-x-512.jpg'
+
+var imageO = 'http://cdn3.volusion.com/joqnj.zjnrj/v/vspfiles/photos/REX00LB1O-2.jpg'
+
+document.getElementById('box1').addEventListener('click', function() {
+  if (playerX) {
+    this.style.backgroundImage = 'url(' + imageX + ')'
+  } else {
+    this.style.backgroundImage = 'url(' + imageO + ')'
+  }
 })
+document.getElementById('box2').addEventListener('click', function() {
+  if (playerX) {
+    this.style.backgroundImage = 'url(' + imageX + ')'
+  } else {
+    this.style.backgroundImage = 'url(' + imageO + ')'
+  }
+})
+document.getElementById('box3').addEventListener('click', function() {
+  if (playerX) {
+    this.style.backgroundImage = 'url(' + imageX + ')'
+  } else {
+    this.style.backgroundImage = 'url(' + imageO + ')'
+  }
+})
+document.getElementById('box4').addEventListener('click', function() {
+  if (playerX) {
+    this.style.backgroundImage = 'url(' + imageX + ')'
+  } else {
+    this.style.backgroundImage = 'url(' + imageO + ')'
+  }
+})
+document.getElementById('box5').addEventListener('click', function() {
+  if (playerX) {
+    this.style.backgroundImage = 'url(' + imageX + ')'
+  } else {
+    this.style.backgroundImage = 'url(' + imageO + ')'
+  }
+})
+document.getElementById('box6').addEventListener('click', function() {
+  if (playerX) {
+    this.style.backgroundImage = 'url(' + imageX + ')'
+  } else {
+    this.style.backgroundImage = 'url(' + imageO + ')'
+  }
+})
+document.getElementById('box7').addEventListener('click', function() {
+  if (playerX) {
+    this.style.backgroundImage = 'url(' + imageX + ')'
+  } else {
+    this.style.backgroundImage = 'url(' + imageO + ')'
+  }
+})
+document.getElementById('box8').addEventListener('click', function() {
+  if (playerX) {
+    this.style.backgroundImage = 'url(' + imageX + ')'
+  } else {
+    this.style.backgroundImage = 'url(' + imageO + ')'
+  }
+})
+document.getElementById('box9').addEventListener('click', function() {
+  if (playerX) {
+    this.style.backgroundImage = 'url(' + imageX + ')'
+  } else {
+    this.style.backgroundImage = 'url(' + imageO + ')'
+  }
+})
+
 var box2 = document.getElementById('box2')
 var box3 = document.getElementById('box3')
 var box4 = document.getElementById('box4')
@@ -21,16 +94,13 @@ var box7 = document.getElementById('box7')
 var box8 = document.getElementById('box8')
 var box9 = document.getElementById('box9')
 
-var player1 = player1
-var player2 = player2
 
 
 //////FUNCTIONS//////
 ////////////////////
-function()
 
 //player 1 is chosen to select a square.
-function
+
 
 //player 1 clicks a square and that square is assigned a color
 //player 2 is chosen to select a square
