@@ -1,43 +1,23 @@
-body {
-  background-color: grey;
+h1 {
+  text-align: center;
 }
 
-div {
-  
+button {
+  display: block;
+  clear: both;
 }
 
-.box1{
-
+.squares {
+  height: 100px;
+  width: 100px;
+  border: 4px solid black;
+  float: left;
 }
 
-.box2{
-
+#row1, #row2, #row3 {
+  clear: both;
 }
 
-.box3{
-
-}
-
-.box4{
-
-}
-
-.box5{
-
-}
-
-.box6{
-
-}
-
-.box7{
-
-}
-
-.box8{
-
-}
-
-.box9{
-
+#gameboard {
+  margin: 0 auto;
 }
