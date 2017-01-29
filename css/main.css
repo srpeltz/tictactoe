@@ -2,9 +2,10 @@ h1 {
   text-align: center;
 }
 
-input {
+button {
   display: block;
   margin: 0 auto;
+  all: none;
 }
 
 .squares {
@@ -20,4 +21,40 @@ input {
 
 #gameboard{
   text-align: center;
+}
+
+#box1 {
+  border-top: 0;
+  border-left: 0;
+}
+
+#box2 {
+  border-top: 0;
+}
+
+#box3 {
+  border-top: 0;
+  border-right: 0;
+}
+
+#box4 {
+  border-left: 0;
+}
+
+#box6 {
+  border-right: 0;
+}
+
+#box7 {
+  border-left: 0;
+  border-bottom: 0;
+}
+
+#box8 {
+  border-bottom: 0;
+}
+
+#box9 {
+  border-bottom: 0;
+  border-right: 0;
 }
