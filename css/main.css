@@ -21,6 +21,7 @@ button {
 
 #gameboard{
   text-align: center;
+  margin: 10px;
 }
 
 #box1 {

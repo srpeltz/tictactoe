@@ -9,7 +9,7 @@ var playerX = true
 var imageX = 'http://www.iconsplace.com/download/black-letter-x-512.jpg'
 var imageO = 'http://cdn3.volusion.com/joqnj.zjnrj/v/vspfiles/photos/REX00LB1O-2.jpg'
 
-var box1 = document.getElementById('box1').addEventListener('click', altTurn);
+var box1 = document.getElementById('box1').addEventListener('click', altTurn)
 var box2 = document.getElementById('box2').addEventListener('click', altTurn);
 var box3 = document.getElementById('box3').addEventListener('click', altTurn);
 var box4 = document.getElementById('box4').addEventListener('click', altTurn);
@@ -21,24 +21,28 @@ var box9 = document.getElementById('box9').addEventListener('click', altTurn);
 
 //////FUNCTIONS//////
 ////////////////////
-function altTurn() {
+function altTurn(e) {
   if (playerX) {
     this.style.backgroundImage = 'url(' + imageX + ')';
     this.setAttribute('box-value', 1);
+    e.target.removeEventListener(e.type, arguments.callee)
     playerX=false;
   }else {
     this.style.backgroundImage = 'url(' + imageO + ')';
     this.setAttribute('box-value', 2);
+    e.target.removeEventListener(e.type, arguments.callee)
     playerX=true
   }
 }
 
-function winner(){y
-  //nodeValue possibl??
-    if ((box1.getAttribute('box-value') === "1") && (box2.getAttribute('box-value') === "1") && (box3.getAttribute('box-value') === "1")) {
-      alert('X WINS FAM!')
-    }
-}
+
+
+// function winner(){
+//   //nodeValue possible??
+//     if ((board[0].getAttribute('box-value') == "2") && (board[1].getAttribute('box-value') == "2") && (board[2].getAttribute('box-value') == "2")) {
+//       alert('X WINS FAM!')
+//     }
+// }
 
 //if player one gets three in a row then he is the winner
 //if player two gets three in a row then he is the winner
